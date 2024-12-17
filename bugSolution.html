@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    const myDiv = document.getElementById('myDiv');
+    if (myDiv) {
+      // Check if the property exists before accessing it
+      if (myDiv.hasOwnProperty('nonExistentProperty')) {
+          console.log(myDiv.nonExistentProperty);
+      } else {
+          console.warn('Property does not exist.');
+      }
+    } else {
+      console.error('Element not found.');
+    }
+  </script>
+</body>
+</html>
