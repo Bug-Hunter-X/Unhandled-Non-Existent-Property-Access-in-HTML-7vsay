@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon HTML error involving attempting to access a non-existent property of an HTML element.  This can happen when you're referencing an element's properties dynamically, and might cause unexpected behavior depending on the browser and context. The solution shows how to implement proper error handling to mitigate this.
