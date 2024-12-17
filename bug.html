@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Attempting to access a non-existent property of an element
+    // that doesn't have any properties will not throw an error in most browsers.
+    // However, this is bad practice and should be handled more carefully
+    console.log(document.getElementById('myDiv').nonExistentProperty);
+  </script>
+</body>
+</html>
